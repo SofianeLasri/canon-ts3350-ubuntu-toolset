@@ -1,0 +1,197 @@
+*PPD-Adobe: "4.3"
+*% "Canon TS3350" virtual printer: manual duplex through ts3350-toolset.
+*% The ts3350-duplex backend receives the PDF produced by pdftopdf and forwards it to the real queue.
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "TS3350DX.PPD"
+*Product: "(Canon TS3350)"
+*Manufacturer: "Canon"
+*ModelName: "Canon TS3350 Manual Duplex"
+*ShortNickName: "Canon TS3350 Duplex"
+*NickName: "Canon TS3350, manual duplex (ts3350-toolset)"
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "1"
+*LandscapeOrientation: Minus90
+*TTRasterizer: Type42
+*cupsVersion: 2.4
+*cupsLanguages: "fr"
+*cupsSingleFile: True
+*cupsManualCopies: True
+*% Each copy of an odd-page document starts on a new sheet.
+*cupsEvenDuplex: True
+*cupsFilter2: "application/pdf application/vnd.cups-pdf 0 -"
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize 3.5x5/3.5 x 5 in: "<</PageSize[252 360]>>setpagedevice"
+*PageSize 3.5x5.Borderless/3.5 x 5 in (Borderless): "<</PageSize[252 360]>>setpagedevice"
+*PageSize 4x6/4 x 6 in: "<</PageSize[288 432]>>setpagedevice"
+*PageSize 4x6.Borderless/4 x 6 in (Borderless): "<</PageSize[288 432]>>setpagedevice"
+*PageSize 5x5/5 x 5 in: "<</PageSize[360 360]>>setpagedevice"
+*PageSize 5x5.Borderless/5 x 5 in (Borderless): "<</PageSize[360 360]>>setpagedevice"
+*PageSize 5x7/5 x 7 in: "<</PageSize[360 504]>>setpagedevice"
+*PageSize 5x7.Borderless/5 x 7 in (Borderless): "<</PageSize[360 504]>>setpagedevice"
+*PageSize A4/A4: "<</PageSize[595.275590551181 841.889763779528]>>setpagedevice"
+*PageSize A4.Borderless/A4 (Borderless): "<</PageSize[595.275590551181 841.889763779528]>>setpagedevice"
+*PageSize A5/A5: "<</PageSize[419.527559055118 595.275590551181]>>setpagedevice"
+*PageSize A5.Borderless/A5 (Borderless): "<</PageSize[419.527559055118 595.275590551181]>>setpagedevice"
+*PageSize B5/JIS B5: "<</PageSize[515.905511811024 728.503937007874]>>setpagedevice"
+*PageSize B5.Borderless/JIS B5 (Borderless): "<</PageSize[515.905511811024 728.503937007874]>>setpagedevice"
+*PageSize Legal/US Legal: "<</PageSize[612 1008]>>setpagedevice"
+*PageSize Legal.Borderless/US Legal (Borderless): "<</PageSize[612 1008]>>setpagedevice"
+*PageSize Letter/US Letter: "<</PageSize[612 792]>>setpagedevice"
+*PageSize Letter.Borderless/US Letter (Borderless): "<</PageSize[612 792]>>setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion 3.5x5/3.5 x 5 in: "<</PageSize[252 360]>>setpagedevice"
+*PageRegion 3.5x5.Borderless/3.5 x 5 in (Borderless): "<</PageSize[252 360]>>setpagedevice"
+*PageRegion 4x6/4 x 6 in: "<</PageSize[288 432]>>setpagedevice"
+*PageRegion 4x6.Borderless/4 x 6 in (Borderless): "<</PageSize[288 432]>>setpagedevice"
+*PageRegion 5x5/5 x 5 in: "<</PageSize[360 360]>>setpagedevice"
+*PageRegion 5x5.Borderless/5 x 5 in (Borderless): "<</PageSize[360 360]>>setpagedevice"
+*PageRegion 5x7/5 x 7 in: "<</PageSize[360 504]>>setpagedevice"
+*PageRegion 5x7.Borderless/5 x 7 in (Borderless): "<</PageSize[360 504]>>setpagedevice"
+*PageRegion A4/A4: "<</PageSize[595.275590551181 841.889763779528]>>setpagedevice"
+*PageRegion A4.Borderless/A4 (Borderless): "<</PageSize[595.275590551181 841.889763779528]>>setpagedevice"
+*PageRegion A5/A5: "<</PageSize[419.527559055118 595.275590551181]>>setpagedevice"
+*PageRegion A5.Borderless/A5 (Borderless): "<</PageSize[419.527559055118 595.275590551181]>>setpagedevice"
+*PageRegion B5/JIS B5: "<</PageSize[515.905511811024 728.503937007874]>>setpagedevice"
+*PageRegion B5.Borderless/JIS B5 (Borderless): "<</PageSize[515.905511811024 728.503937007874]>>setpagedevice"
+*PageRegion Legal/US Legal: "<</PageSize[612 1008]>>setpagedevice"
+*PageRegion Legal.Borderless/US Legal (Borderless): "<</PageSize[612 1008]>>setpagedevice"
+*PageRegion Letter/US Letter: "<</PageSize[612 792]>>setpagedevice"
+*PageRegion Letter.Borderless/US Letter (Borderless): "<</PageSize[612 792]>>setpagedevice"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: A4
+*DefaultPaperDimension: A4
+*ImageableArea 3.5x5: "9.637795275591 14.173228346457 242.362204724409 345.826771653543"
+*PaperDimension 3.5x5: "252 360"
+*ImageableArea 3.5x5.Borderless: "0 0 252 360"
+*PaperDimension 3.5x5.Borderless: "252 360"
+*ImageableArea 4x6: "9.637795275591 14.173228346457 278.362204724409 417.826771653543"
+*PaperDimension 4x6: "288 432"
+*ImageableArea 4x6.Borderless: "0 0 288 432"
+*PaperDimension 4x6.Borderless: "288 432"
+*ImageableArea 5x5: "17.007874015748 17.007874015748 342.992125984252 342.992125984252"
+*PaperDimension 5x5: "360 360"
+*ImageableArea 5x5.Borderless: "0 0 360 360"
+*PaperDimension 5x5.Borderless: "360 360"
+*ImageableArea 5x7: "9.637795275591 14.173228346457 350.362204724409 489.826771653543"
+*PaperDimension 5x7: "360 504"
+*ImageableArea 5x7.Borderless: "0 0 360 504"
+*PaperDimension 5x7.Borderless: "360 504"
+*ImageableArea A4: "9.637795275591 14.173228346457 585.637795275591 827.716535433071"
+*PaperDimension A4: "595.275590551181 841.889763779528"
+*ImageableArea A4.Borderless: "0 0 595.275590551181 841.889763779528"
+*PaperDimension A4.Borderless: "595.275590551181 841.889763779528"
+*ImageableArea A5: "9.637795275591 14.173228346457 409.889763779528 581.102362204724"
+*PaperDimension A5: "419.527559055118 595.275590551181"
+*ImageableArea A5.Borderless: "0 0 419.527559055118 595.275590551181"
+*PaperDimension A5.Borderless: "419.527559055118 595.275590551181"
+*ImageableArea B5: "9.637795275591 14.173228346457 506.267716535433 714.330708661417"
+*PaperDimension B5: "515.905511811024 728.503937007874"
+*ImageableArea B5.Borderless: "0 0 515.905511811024 728.503937007874"
+*PaperDimension B5.Borderless: "515.905511811024 728.503937007874"
+*ImageableArea Legal: "18.141732283465 14.173228346457 594.141732283465 993.826771653543"
+*PaperDimension Legal: "612 1008"
+*ImageableArea Legal.Borderless: "0 0 612 1008"
+*PaperDimension Legal.Borderless: "612 1008"
+*ImageableArea Letter: "18.141732283465 14.173228346457 594.141732283465 777.826771653543"
+*PaperDimension Letter: "612 792"
+*ImageableArea Letter.Borderless: "0 0 612 792"
+*PaperDimension Letter.Borderless: "612 792"
+
+*OpenUI *Duplex/2-Sided Printing: PickOne
+*OrderDependency: 10 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/Off: "<</Duplex false>>setpagedevice"
+*Duplex DuplexNoTumble/Long-Edge (Portrait): "<</Duplex true/Tumble false>>setpagedevice"
+*Duplex DuplexTumble/Short-Edge (Landscape): "<</Duplex true/Tumble true>>setpagedevice"
+*CloseUI: *Duplex
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 10 AnySetup *MediaType
+*DefaultMediaType: Stationery
+*MediaType Stationery/Plain Paper: "<</MediaType(Stationery)>>setpagedevice"
+*MediaType Photographic/Photo Paper: "<</MediaType(Photographic)>>setpagedevice"
+*CloseUI: *MediaType
+
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 10 AnySetup *ColorModel
+*DefaultColorModel: RGB
+*ColorModel RGB/Color: "<</cupsColorSpace 1>>setpagedevice"
+*ColorModel Gray/Grayscale: "<</cupsColorSpace 0>>setpagedevice"
+*CloseUI: *ColorModel
+
+*DefaultResolution: 600dpi
+*OpenUI *cupsPrintQuality/Print Quality: PickOne
+*OrderDependency: 10 AnySetup *cupsPrintQuality
+*DefaultcupsPrintQuality: Normal
+*cupsPrintQuality Normal/Normal: "<</HWResolution[600 600]>>setpagedevice"
+*cupsPrintQuality High/High: "<</HWResolution[600 600]>>setpagedevice"
+*CloseUI: *cupsPrintQuality
+
+*% French translations (UTF-8)
+*fr.Translation PageSize/Format du papier: ""
+*fr.Translation PageRegion/Format du papier: ""
+*fr.PageSize 3.5x5/9 x 13 cm: ""
+*fr.PageSize 3.5x5.Borderless/9 x 13 cm (sans marge): ""
+*fr.PageRegion 3.5x5/9 x 13 cm: ""
+*fr.PageRegion 3.5x5.Borderless/9 x 13 cm (sans marge): ""
+*fr.PageSize 4x6/10 x 15 cm: ""
+*fr.PageSize 4x6.Borderless/10 x 15 cm (sans marge): ""
+*fr.PageRegion 4x6/10 x 15 cm: ""
+*fr.PageRegion 4x6.Borderless/10 x 15 cm (sans marge): ""
+*fr.PageSize 5x5/13 x 13 cm: ""
+*fr.PageSize 5x5.Borderless/13 x 13 cm (sans marge): ""
+*fr.PageRegion 5x5/13 x 13 cm: ""
+*fr.PageRegion 5x5.Borderless/13 x 13 cm (sans marge): ""
+*fr.PageSize 5x7/13 x 18 cm: ""
+*fr.PageSize 5x7.Borderless/13 x 18 cm (sans marge): ""
+*fr.PageRegion 5x7/13 x 18 cm: ""
+*fr.PageRegion 5x7.Borderless/13 x 18 cm (sans marge): ""
+*fr.PageSize A4/A4: ""
+*fr.PageSize A4.Borderless/A4 (sans marge): ""
+*fr.PageRegion A4/A4: ""
+*fr.PageRegion A4.Borderless/A4 (sans marge): ""
+*fr.PageSize A5/A5: ""
+*fr.PageSize A5.Borderless/A5 (sans marge): ""
+*fr.PageRegion A5/A5: ""
+*fr.PageRegion A5.Borderless/A5 (sans marge): ""
+*fr.PageSize B5/JIS B5: ""
+*fr.PageSize B5.Borderless/JIS B5 (sans marge): ""
+*fr.PageRegion B5/JIS B5: ""
+*fr.PageRegion B5.Borderless/JIS B5 (sans marge): ""
+*fr.PageSize Legal/Legal US: ""
+*fr.PageSize Legal.Borderless/Legal US (sans marge): ""
+*fr.PageRegion Legal/Legal US: ""
+*fr.PageRegion Legal.Borderless/Legal US (sans marge): ""
+*fr.PageSize Letter/Lettre US: ""
+*fr.PageSize Letter.Borderless/Lettre US (sans marge): ""
+*fr.PageRegion Letter/Lettre US: ""
+*fr.PageRegion Letter.Borderless/Lettre US (sans marge): ""
+*fr.Translation Duplex/Recto verso: ""
+*fr.Duplex None/Désactivé: ""
+*fr.Duplex DuplexNoTumble/Bord long (portrait): ""
+*fr.Duplex DuplexTumble/Bord court (paysage): ""
+*fr.Translation MediaType/Type de papier: ""
+*fr.MediaType Stationery/Papier ordinaire: ""
+*fr.MediaType Photographic/Papier photo: ""
+*fr.Translation ColorModel/Couleur: ""
+*fr.ColorModel RGB/Couleur: ""
+*fr.ColorModel Gray/Niveaux de gris: ""
+*fr.Translation cupsPrintQuality/Qualité d'impression: ""
+*fr.cupsPrintQuality Normal/Normale: ""
+*fr.cupsPrintQuality High/Élevée: ""
+*% End of PPD

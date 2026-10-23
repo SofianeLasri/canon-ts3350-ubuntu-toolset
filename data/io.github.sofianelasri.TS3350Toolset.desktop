@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Canon TS3350
+GenericName=Scanning and duplex printing
+GenericName[fr]=Numérisation et recto-verso
+Comment=Scan documents and print on both sides manually with the Canon Pixma TS3350
+Comment[fr]=Numériser des documents et imprimer en recto-verso manuel avec la Canon Pixma TS3350
+Exec=ts3350-toolset %F
+Icon=io.github.sofianelasri.TS3350Toolset
+Terminal=false
+Categories=Graphics;Scanning;
+Keywords=scanner;scan;printer;duplex;two-sided;pdf;canon;pixma;
+Keywords[fr]=scanner;numériser;scan;imprimante;recto;verso;pdf;canon;pixma;
+MimeType=application/pdf;
+StartupNotify=true
+DBusActivatable=true
+X-GNOME-UsesNotifications=true

@@ -1,0 +1,17 @@
+[package]
+name = "ts3350-backend"
+description = "CUPS backend of the Canon TS3350 virtual printer (manual duplex)"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "ts3350-duplex"
+path = "src/main.rs"
+
+[dependencies]
+ts3350-core.workspace = true
+anyhow.workspace = true
+nix.workspace = true

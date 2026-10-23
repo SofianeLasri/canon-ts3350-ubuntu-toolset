@@ -1,0 +1,15 @@
+[package]
+name = "ts3350-toolset"
+description = "Scanning and manual duplex printing for the Canon Pixma TS3350"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+ts3350-core.workspace = true
+anyhow.workspace = true
+image.workspace = true
+gtk.workspace = true
+adw.workspace = true

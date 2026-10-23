@@ -1,0 +1,808 @@
+# French translation of Canon TS3350 Toolset.
+# The coverage test (`cargo test -p ts3350-core i18n`) lists missing or obsolete entries.
+msgid ""
+msgstr ""
+"Project-Id-Version: ts3350-toolset\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. strftime format, see https://docs.gtk.org/glib/method.DateTime.format.html
+msgid "%Y-%m-%d %H.%M"
+msgstr "%d-%m-%Y à %Hh%M"
+
+#. strftime format, see https://docs.gtk.org/glib/method.DateTime.format.html
+msgid "%b %d, %H:%M"
+msgstr "%d/%m à %H:%M"
+
+msgid "3D object"
+msgstr "Objet 3D"
+
+msgid "A PDF holds all the pages in a single file"
+msgstr "Le PDF regroupe toutes les pages dans un seul fichier"
+
+msgid "A single page: printed directly, no flipping needed."
+msgstr "Une seule page : impression directe, sans retournement."
+
+msgid "Abandon"
+msgstr "Abandonner"
+
+msgid "Abandon printing?"
+msgstr "Abandonner l'impression ?"
+
+msgid "About Canon TS3350"
+msgstr "À propos de Canon TS3350"
+
+msgid "Advanced settings"
+msgstr "Réglages avancés"
+
+msgid "Automatic"
+msgstr "Automatique"
+
+msgid "BACK"
+msgstr "VERSO"
+
+msgid "Background reduction"
+msgstr "Réduire le fond"
+
+msgid "Balanced"
+msgstr "Équilibrée"
+
+msgid "Binding"
+msgstr "Reliure"
+
+msgid "Business card"
+msgstr "Carte de visite"
+
+msgid "CUPS queue that receives the fronts and backs"
+msgstr "File CUPS qui reçoit les rectos et les versos"
+
+msgid "CUPS: {error}"
+msgstr "CUPS : {error}"
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Cancel printing"
+msgstr "Annuler l'impression"
+
+msgid "Cannot create the test page"
+msgstr "Page de test impossible"
+
+msgid "Cannot read this PDF: {error}"
+msgstr "Impossible de lire ce PDF : {error}"
+
+msgid "Check the 2 printed sheets"
+msgstr "Vérifiez les 2 feuilles imprimées"
+
+msgid "Checking…"
+msgstr "Vérification…"
+
+msgid "Choose a PDF…"
+msgstr "Choisir un PDF…"
+
+msgid "Clear"
+msgstr "Effacer"
+
+msgid "Clear all pages"
+msgstr "Effacer toutes les pages"
+
+msgid "Clear the document?"
+msgstr "Effacer le document ?"
+
+msgid ""
+"Click “Preview” to see what is on the glass,\n"
+"then draw the area to scan."
+msgstr ""
+"Cliquez sur « Aperçu » pour voir le contenu de la vitre,\n"
+"puis tracez la zone à numériser."
+
+msgid "Click “Print the backs”."
+msgstr "Cliquez sur « Imprimer les versos »."
+
+msgid "Close"
+msgstr "Fermer"
+
+msgid "Color"
+msgstr "Couleur"
+
+msgid "Compression"
+msgstr "Compression"
+
+msgid "Connecting to the printer…"
+msgstr "Connexion à l'imprimante…"
+
+msgid "Connecting to the scanner…"
+msgstr "Connexion au scanner…"
+
+msgid "Continue"
+msgstr "Continuer"
+
+msgid "Cover open"
+msgstr "Capot ouvert"
+
+msgid "Current setting"
+msgstr "Réglage actuel"
+
+msgid "Custom area"
+msgstr "Zone personnalisée"
+
+msgid "Delete the page"
+msgstr "Supprimer la page"
+
+msgid "Delete this job"
+msgstr "Supprimer ce travail"
+
+msgid "Deletion failed"
+msgstr "Suppression impossible"
+
+msgid "Document"
+msgstr "Document"
+
+msgid "Document saved"
+msgstr "Document enregistré"
+
+msgid "Document type"
+msgstr "Type de document"
+
+msgid "Done"
+msgstr "Terminé"
+
+msgid "Dots per inch"
+msgstr "Points par pouce"
+
+msgid "Duplex"
+msgstr "Recto-verso"
+
+msgid "Duplex setting corrected: run the test again to check"
+msgstr "Réglage du recto-verso corrigé : relancez le test pour vérifier"
+
+msgid "Duplex test"
+msgstr "Test du recto-verso"
+
+msgid "Embeds the scanner images as is, without recompressing them"
+msgstr "Insère les images du scanner telles quelles, sans les recompresser"
+
+msgid "Encoding speed"
+msgstr "Vitesse d'encodage"
+
+msgid "Export…"
+msgstr "Exporter…"
+
+msgid "FRONT"
+msgstr "RECTO"
+
+msgid "Fast"
+msgstr "Rapide"
+
+msgid "Flip it over"
+msgstr "Retournez-la"
+
+msgid "Flip the stack of sheets"
+msgstr "Retournez la pile de feuilles"
+
+msgid "Flip the stack over: the printed side must face the back of the printer."
+msgstr "Retournez la pile : la face imprimée doit regarder vers l'arrière de l'imprimante."
+
+msgid "Flipping"
+msgstr "Retournement"
+
+msgid "Format"
+msgstr "Format"
+
+msgid "From any application, print to “Canon TS3350” and choose “Two-sided: long edge” or “short edge”: this wizard opens by itself."
+msgstr "Depuis n'importe quelle application, imprimez sur « Canon TS3350 » et choisissez « Recto verso : bord long » ou « bord court » : cet assistant s'ouvrira tout seul."
+
+msgid "General"
+msgstr "Général"
+
+msgid "Grayscale"
+msgstr "Niveaux de gris"
+
+msgid "Halftone (printed matter)"
+msgstr "Trame (imprimé)"
+
+msgid "High"
+msgstr "Élevée"
+
+msgid "If the backs come out in the wrong order or upside down, print the test page (2 sheets): the setting is corrected from your answers."
+msgstr "Si les versos sortent dans le mauvais ordre ou à l'envers, imprimez la page de test (2 feuilles) : le réglage sera corrigé d'après vos réponses."
+
+msgid "Image processing"
+msgstr "Traitement de l'image"
+
+msgid "Ink cartridge empty"
+msgstr "Cartouche d'encre vide"
+
+msgid "Ink level low"
+msgstr "Niveau d'encre bas"
+
+msgid "Installed: shown in the print dialog of your applications"
+msgstr "Installée : visible dans la boîte d'impression de vos applications"
+
+msgid "Job not found"
+msgstr "Travail introuvable"
+
+msgid "Leave empty to discover the scanner automatically. Example: http://192.168.1.38/eSCL"
+msgstr "Laissez vide pour détecter le scanner automatiquement. Exemple : http://192.168.1.38/eSCL"
+
+msgid "Less JPEG compression on the scanner side, bigger files"
+msgstr "Compression JPEG plus faible côté scanner, fichiers plus lourds"
+
+msgid "Line art"
+msgstr "Dessin au trait"
+
+msgid "Long edge (book)"
+msgstr "Bord long (livre)"
+
+msgid "Looking for the scanner on the network…"
+msgstr "Recherche du scanner sur le réseau…"
+
+msgid "Looking for the scanner…"
+msgstr "Recherche du scanner…"
+
+msgid "Lossless: only the saving time changes"
+msgstr "Sans perte : seule la durée d'enregistrement change"
+
+msgid "Lowering the resolution makes the file much smaller"
+msgstr "Réduire la résolution allège fortement le fichier"
+
+msgid "Magazine"
+msgstr "Magazine"
+
+msgid "Main menu"
+msgstr "Menu principal"
+
+msgid "Manual address"
+msgstr "Adresse manuelle"
+
+msgid "Manual duplex"
+msgstr "Recto-verso manuel"
+
+msgid "Manual duplex test - Canon TS3350 Toolset"
+msgstr "Test de recto-verso manuel - Canon TS3350 Toolset"
+
+msgid "Maximum"
+msgstr "Maximale"
+
+msgid "Maximum quality"
+msgstr "Qualité maximale"
+
+msgid "Move left"
+msgstr "Déplacer vers la gauche"
+
+msgid "Move right"
+msgstr "Déplacer vers la droite"
+
+msgid "Multi-page scanning and manual duplex printing for the Canon Pixma TS3350."
+msgstr "Numérisation multipage et impression recto-verso manuelle pour la Canon Pixma TS3350."
+
+msgid "New attempt"
+msgstr "Nouvelle tentative"
+
+msgid ""
+"No page yet: put the original face down on the glass,\n"
+"aligned with the corner marked in orange, then click “Scan a page”."
+msgstr ""
+"Aucune page pour l'instant : posez l'original face contre la vitre,\n"
+"calé dans le coin repéré en orange, puis cliquez sur « Numériser une page »."
+
+msgid "No paper in the rear tray"
+msgstr "Plus de papier dans le bac arrière"
+
+msgid "No pending job"
+msgstr "Aucun travail en attente"
+
+msgid "No scanner"
+msgstr "Aucun scanner"
+
+msgid "No scanner found. Check that the printer is on and connected to the same network."
+msgstr "Aucun scanner trouvé. Vérifiez que l'imprimante est allumée et connectée au même réseau."
+
+msgid "Normal"
+msgstr "Normale"
+
+msgid "Not installed: run ./install.sh to add it to CUPS"
+msgstr "Non installée : lancez ./install.sh pour l'ajouter à CUPS"
+
+msgid "On each sheet, the “TOP” arrows of the front and back point to the same edge"
+msgstr "Sur chaque feuille, les flèches « HAUT » du recto et du verso pointent vers le même bord"
+
+msgid "Open"
+msgstr "Ouvrir"
+
+msgid "Order of the backs: {order} · Rotation of the backs: {rotation}"
+msgstr "Ordre des versos : {order} · Rotation des versos : {rotation}"
+
+msgid "Original"
+msgstr "Originale"
+
+msgid "Original quality"
+msgstr "Qualité d'origine"
+
+msgid "Out of order"
+msgstr "Hors service"
+
+msgid "Output tray full"
+msgstr "Bac de sortie plein"
+
+msgid "PDF documents"
+msgstr "Documents PDF"
+
+msgid "PDF is not an image format"
+msgstr "le PDF n'est pas un format d'image"
+
+msgid "PDF: {error}"
+msgstr "PDF : {error}"
+
+msgid "PNG (lossless)"
+msgstr "PNG (sans perte)"
+
+msgid "Page {number} added to the document"
+msgstr "Page {number} ajoutée au document"
+
+msgid "Page {number} · {dpi} dpi"
+msgstr "Page {number} · {dpi} ppp"
+
+msgid "Paper jam"
+msgstr "Bourrage papier"
+
+msgid "Paper size"
+msgstr "Format du papier"
+
+msgid "Paper tray missing"
+msgstr "Bac d'alimentation absent"
+
+msgid "Paper type"
+msgstr "Type de papier"
+
+msgid "Pending jobs"
+msgstr "Travaux en attente"
+
+msgid "Photo"
+msgstr "Photo"
+
+msgid "Photo 10 × 15 cm"
+msgstr "Photo 10 × 15 cm"
+
+msgid "Photo 13 × 18 cm"
+msgstr "Photo 13 × 18 cm"
+
+msgid "Photo paper"
+msgstr "Papier photo"
+
+msgid "Physical printer"
+msgstr "Imprimante physique"
+
+msgid "Plain paper"
+msgstr "Papier ordinaire"
+
+msgid "Preferences"
+msgstr "Préférences"
+
+msgid "Preview"
+msgstr "Aperçu"
+
+msgid "Preview failed"
+msgstr "Aperçu impossible"
+
+msgid "Previewing…"
+msgstr "Aperçu en cours…"
+
+msgid "Print"
+msgstr "Imprimer"
+
+msgid "Print a PDF on both sides"
+msgstr "Imprimer un PDF en recto-verso"
+
+msgid "Print a test page…"
+msgstr "Imprimer une page de test…"
+
+msgid "Print the backs"
+msgstr "Imprimer les versos"
+
+msgid "Print the fronts"
+msgstr "Imprimer les rectos"
+
+msgid "Printer"
+msgstr "Imprimante"
+
+msgid "Printer offline"
+msgstr "Imprimante hors ligne"
+
+msgid "Printer stopped in CUPS"
+msgstr "Imprimante arrêtée dans CUPS"
+
+msgid "Printer stopped: {message}"
+msgstr "Imprimante arrêtée : {message}"
+
+msgid "Printing"
+msgstr "Impression"
+
+msgid "Printing complete"
+msgstr "Impression terminée"
+
+msgid "Printing failed"
+msgstr "Impression impossible"
+
+msgid "Printing the backs"
+msgstr "Impression des versos"
+
+msgid "Printing the fronts"
+msgstr "Impression des rectos"
+
+msgid "Printing will have to start again from the beginning."
+msgstr "Il faudra recommencer l'impression depuis le début."
+
+msgid "Printing…"
+msgstr "Impression en cours…"
+
+msgid "Quality"
+msgstr "Qualité"
+
+msgid "Quick low-resolution scan to choose the area"
+msgstr "Numérisation rapide en basse résolution pour choisir la zone"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "Raw (no processing)"
+msgstr "Brut (sans traitement)"
+
+msgid "Reading the document…"
+msgstr "Lecture du document…"
+
+msgid "Ready"
+msgstr "Prêt"
+
+msgid "Received {date} · {binding}"
+msgstr "Reçu le {date} · {binding}"
+
+msgid "Recommended"
+msgstr "Conseillé"
+
+msgid "Reconnecting to the scanner"
+msgstr "Connexion au scanner relancée"
+
+msgid "Reprint the fronts"
+msgstr "Réimprimer les rectos"
+
+msgid "Resolution"
+msgstr "Résolution"
+
+msgid "Reverse the order of the backs"
+msgstr "Inverser l'ordre des versos"
+
+msgid "Rotate by 90°"
+msgstr "Pivoter de 90°"
+
+msgid "Rotate the backs by 180°"
+msgstr "Pivoter les versos de 180°"
+
+msgid "SHEET {sheet}"
+msgstr "FEUILLE {sheet}"
+
+msgid "Save the document"
+msgstr "Enregistrer le document"
+
+msgid "Save the setting"
+msgstr "Enregistrer le réglage"
+
+msgid "Save…"
+msgstr "Enregistrer…"
+
+msgid "Saving failed"
+msgstr "Enregistrement impossible"
+
+msgid "Saving…"
+msgstr "Enregistrement en cours…"
+
+msgid "Scan"
+msgstr "Numériser"
+
+msgid "Scan a page"
+msgstr "Numériser une page"
+
+msgid "Scan failed"
+msgstr "Numérisation impossible"
+
+msgid "Scan in progress"
+msgstr "Numérisation en cours"
+
+msgid "Scan {date}"
+msgstr "Numérisation du {date}"
+
+msgid "Scanned document"
+msgstr "Document numérisé"
+
+msgid "Scanner"
+msgstr "Scanner"
+
+msgid "Scanner eSCL address"
+msgstr "Adresse eSCL du scanner"
+
+msgid "Scanner unreachable: {error}"
+msgstr "Scanner injoignable : {error}"
+
+msgid "Scanning"
+msgstr "Numérisation"
+
+msgid "Scanning…"
+msgstr "Numérisation en cours…"
+
+msgid "Scans the glass and adds the page to the document"
+msgstr "Numérise la vitre et ajoute la page au document"
+
+msgid "Search for scanners again"
+msgstr "Rechercher à nouveau les scanners"
+
+msgid "Searching…"
+msgstr "Recherche…"
+
+msgid "Settings"
+msgstr "Réglages"
+
+msgid "Sharpen"
+msgstr "Accentuer la netteté"
+
+msgid "Sheet flipping"
+msgstr "Retournement des feuilles"
+
+msgid "Short edge (notepad)"
+msgstr "Bord court (bloc-notes)"
+
+msgid "Show"
+msgstr "Afficher"
+
+msgid "Slide it into the rear tray with the top of the pages going in first, as in the first pass."
+msgstr "Glissez-la dans le bac arrière en faisant entrer en premier le haut des pages, comme lors de la première passe."
+
+msgid "Slow (smaller file)"
+msgstr "Lente (fichier plus léger)"
+
+msgid "Status"
+msgstr "État"
+
+msgid "Stopped"
+msgstr "Arrêté"
+
+msgid "Summary"
+msgstr "Résumé"
+
+msgid "TOP"
+msgstr "HAUT"
+
+msgid "Take the stack out"
+msgstr "Sortez la pile"
+
+msgid "Test result"
+msgstr "Résultat du test"
+
+msgid "Text"
+msgstr "Texte"
+
+msgid "Text and graphics"
+msgstr "Texte et graphiques"
+
+msgid "Text and photo"
+msgstr "Texte et photo"
+
+msgid "The back of sheet 1 reads “SHEET 1”"
+msgstr "Le verso de la feuille 1 indique « FEUILLE 1 »"
+
+msgid "The current setting is correct"
+msgstr "Le réglage actuel est correct"
+
+msgid "The document has an odd number of pages: the last sheet will come out with a blank back."
+msgstr "Le document a un nombre impair de pages : la dernière feuille ressortira avec un verso vierge."
+
+msgid "The fronts are printed: put the stack back in the rear tray to print the backs."
+msgstr "Les rectos sont imprimés : replacez la pile dans le bac arrière pour imprimer les versos."
+
+msgid "The job stays in the “Pending jobs” list: you can start it again from the beginning."
+msgstr "Le travail reste dans la liste « Travaux en attente » : vous pourrez le reprendre depuis le début."
+
+msgid "The last sheet gets its back printed first"
+msgstr "La dernière feuille reçoit son verso en premier"
+
+msgid "The lower it is, the smaller the file"
+msgstr "Plus elle est basse, plus le fichier est léger"
+
+msgid "These settings come from the test page: leave them alone if the backs come out right."
+msgstr "Ces réglages se déduisent de la page de test : inutile d'y toucher si les versos sortent correctement."
+
+msgid "This scanner has no usable platen or feeder."
+msgstr "Ce scanner n'a ni vitre ni chargeur utilisable."
+
+msgid ""
+"Top of the pages\n"
+"first"
+msgstr ""
+"Haut des pages\n"
+"en premier"
+
+msgid "Two-sided jobs sent to “Canon TS3350” and not finished yet"
+msgstr "Travaux envoyés à « Canon TS3350 » en recto-verso et pas encore terminés"
+
+msgid "Two-sided printing"
+msgstr "Impression recto-verso"
+
+msgid "Two-sided printing complete"
+msgstr "Impression recto-verso terminée"
+
+msgid "US Legal"
+msgstr "Legal US"
+
+msgid "US Letter"
+msgstr "Lettre US"
+
+msgid "US Letter (8.5 × 11 in)"
+msgstr "Lettre US (8,5 × 11 po)"
+
+msgid "USB scanner (ipp-usb)"
+msgstr "Scanner USB (ipp-usb)"
+
+msgid "Untick what is not right: the setting will be corrected automatically."
+msgstr "Décochez ce qui n'est pas correct : le réglage sera corrigé automatiquement."
+
+msgid "Use plain A4 paper. This test checks the order and orientation of the backs."
+msgstr "Utilisez du papier ordinaire A4. Ce test vérifie l'ordre et le sens des versos."
+
+msgid "Waiting for the printer…"
+msgstr "En attente de l'imprimante…"
+
+msgid "Warming up"
+msgstr "Préparation"
+
+msgid "Whitens the paper background (text documents)"
+msgstr "Blanchit le fond du papier (documents texte)"
+
+msgid "Whole platen"
+msgstr "Vitre entière"
+
+msgid "cannot run {program}: {error}"
+msgstr "impossible de lancer {program} : {error}"
+
+msgid "configuration folder not found"
+msgstr "dossier de configuration introuvable"
+
+msgid "configuration: {error}"
+msgstr "configuration : {error}"
+
+msgid "empty XML document"
+msgstr "document XML vide"
+
+msgid "image: {error}"
+msgstr "image : {error}"
+
+msgid "input/output error: {error}"
+msgstr "erreur d'entrée/sortie : {error}"
+
+msgid "invalid XML response: {error}"
+msgstr "réponse XML invalide : {error}"
+
+msgid "missing Location header"
+msgstr "en-tête Location absent"
+
+msgid "network error: {error}"
+msgstr "erreur réseau : {error}"
+
+msgid "no Canon TS3300/TS3350 printer found in CUPS"
+msgstr "aucune imprimante Canon TS3300/TS3350 trouvée dans CUPS"
+
+msgid "no document produced"
+msgstr "aucun document produit"
+
+msgid "none"
+msgstr "aucune"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "page tree not found"
+msgstr "arbre de pages introuvable"
+
+msgid "page {page} is missing from the PDF"
+msgstr "la page {page} est absente du PDF"
+
+msgid "reversed"
+msgstr "inversé"
+
+msgid "scan job refused"
+msgstr "travail de numérisation refusé"
+
+msgid "scanner unavailable ({state})"
+msgstr "scanner indisponible ({state})"
+
+msgid "the PDF contains no page"
+msgstr "le PDF ne contient aucune page"
+
+msgid "the scanner answered {status}: {message}"
+msgstr "le scanner a répondu {status} : {message}"
+
+msgid "this PDF is password protected"
+msgstr "ce PDF est protégé par un mot de passe"
+
+msgid "truncated XML document"
+msgstr "document XML tronqué"
+
+msgid "unexpected answer from lp: {output}"
+msgstr "réponse inattendue de lp : {output}"
+
+msgid "unexpected closing tag"
+msgstr "balise fermante orpheline"
+
+msgid "{dpi} dpi"
+msgstr "{dpi} ppp"
+
+msgid "{format} files"
+msgstr "Fichiers {format}"
+
+msgid "{name} — ready"
+msgstr "{name} — prêt"
+
+msgid ""
+"{pages} on {sheets}.\n"
+"Put at least {sheets} in the rear tray."
+msgstr ""
+"{pages} sur {sheets}.\n"
+"Placez au moins {sheets} dans le bac arrière."
+
+msgid "{title} (backs)"
+msgstr "{title} (versos)"
+
+msgid "{title} (fronts)"
+msgstr "{title} (rectos)"
+
+msgid "“Canon TS3350” printer"
+msgstr "Imprimante « Canon TS3350 »"
+
+msgid "“{title}” was printed on both sides."
+msgstr "« {title} » a été imprimé en recto-verso."
+
+msgid "A {format} file holds a single image: the {count} page will be saved as numbered files (-01, -02…)."
+msgid_plural "A {format} file holds a single image: the {count} pages will be saved as numbered files (-01, -02…)."
+msgstr[0] "Un fichier {format} ne contient qu'une image : la page sera enregistrée dans un fichier numéroté (-01)."
+msgstr[1] "Un fichier {format} ne contient qu'une image : les {count} pages seront enregistrées dans des fichiers numérotés (-01, -02…)."
+
+msgid "Document — {count} page"
+msgid_plural "Document — {count} pages"
+msgstr[0] "Document — {count} page"
+msgstr[1] "Document — {count} pages"
+
+msgid "Export {count} page"
+msgid_plural "Export {count} pages"
+msgstr[0] "Exporter {count} page"
+msgstr[1] "Exporter {count} pages"
+
+msgid "Wait until the sheet is out, then take it from the output tray."
+msgid_plural "Wait until the {count} sheets are out, then take the whole stack from the output tray without changing the order of the sheets."
+msgstr[0] "Attendez que la feuille soit sortie, puis prenez-la dans le bac de sortie."
+msgstr[1] "Attendez que les {count} feuilles soient sorties, puis prenez toute la pile dans le bac de sortie, sans changer l'ordre des feuilles."
+
+msgid "{count} file saved"
+msgid_plural "{count} files saved"
+msgstr[0] "{count} fichier enregistré"
+msgstr[1] "{count} fichiers enregistrés"
+
+msgid "{count} page"
+msgid_plural "{count} pages"
+msgstr[0] "{count} page"
+msgstr[1] "{count} pages"
+
+msgid "{count} page will be deleted. Remember to export the document first."
+msgid_plural "{count} pages will be deleted. Remember to export the document first."
+msgstr[0] "{count} page sera supprimée. Pensez à exporter le document avant."
+msgstr[1] "{count} pages seront supprimées. Pensez à exporter le document avant."
+
+msgid "{count} sheet"
+msgid_plural "{count} sheets"
+msgstr[0] "{count} feuille"
+msgstr[1] "{count} feuilles"
+
+msgid "{count} sheet to print"
+msgid_plural "{count} sheets to print"
+msgstr[0] "{count} feuille à imprimer"
+msgstr[1] "{count} feuilles à imprimer"
