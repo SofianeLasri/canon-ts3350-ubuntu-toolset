@@ -531,10 +531,12 @@ impl Wizard {
                     (Ok(progress), status) => {
                         if let Some(widgets) = wizard.progress.borrow().as_ref() {
                             widgets.status.set_label(match progress {
-                                JobProgress::Queued => i18n("Waiting for the printer…"),
+                                JobProgress::Queued | JobProgress::Stalled => i18n("Waiting for the printer…"),
                                 _ => i18n("Printing…"),
                             });
-                            let problem = status.and_then(|s| s.problem());
+                            let stalled = (progress == JobProgress::Stalled)
+                                .then(|| i18n("CUPS cannot find the printer: run install.sh again").to_owned());
+                            let problem = status.and_then(|s| s.problem()).or(stalled);
                             widgets.problem.set_visible(problem.is_some());
                             widgets.problem.set_label(problem.as_deref().unwrap_or(""));
                         }

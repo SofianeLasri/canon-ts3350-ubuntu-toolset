@@ -66,6 +66,19 @@ sudo install -Dm644 "data/icons/hicolor/scalable/apps/$APP_ID.svg" \
     "$DATADIR/icons/hicolor/scalable/apps/$APP_ID.svg"
 sudo install -d -m755 "$SPOOL"
 
+# cups-browsed picks the destination of an implicitclass queue when a job starts, and can stop
+# finding one (jobs then wait forever). On a permanent queue pointing to the same device, it lets
+# go of the queue and creates no duplicate.
+if LC_ALL=C lpstat -v "$target" 2>/dev/null | grep -q ': implicitclass://'; then
+    info "Making $target a permanent queue"
+    device=$(sudo lpinfo -v 2>/dev/null \
+        | sed -n 's/^network \(ipps:.*\)$/\1/p' \
+        | grep -iE 'ts33|ts%2033' \
+        | head -n1 || true)
+    [[ -n $device ]] || fail "the printer was not found on the network: is it turned on?"
+    sudo lpadmin -p "$target" -v "$device" -m everywhere -E 2>&1 | grep -v -i "deprecated" || true
+fi
+
 info "Creating the “Canon TS3350” virtual printer"
 sudo lpadmin -x "$QUEUE" 2>/dev/null || true
 # PPD files are deprecated in CUPS 2.4 but remain the only way to expose the Duplex option.

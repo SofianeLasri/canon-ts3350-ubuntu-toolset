@@ -247,8 +247,13 @@ pub fn cancel(job_id: &str) -> Result<()> {
 pub enum JobProgress {
     Queued,
     Printing,
+    /// cups-browsed finds no destination: CUPS retries the job without ever reaching the printer.
+    Stalled,
     Done,
 }
+
+/// Status line left by the `implicitclass` backend. `lpstat -p` still reports such a job as printing.
+const NO_DESTINATION: &str = "No suitable destination host found";
 
 #[derive(Debug, Clone, Default, PartialEq, Eq)]
 pub struct PrinterStatus {
@@ -324,13 +329,23 @@ pub fn job_progress(queue: &str, job_id: &str) -> Result<JobProgress> {
     if job_id.starts_with(DRY_RUN_PREFIX) {
         return Ok(JobProgress::Done);
     }
-    let pending = stdout_of("lpstat", &["-W", "not-completed", "-o", queue])?;
-    let queued = pending.lines().any(|l| l.split_whitespace().next() == Some(job_id));
-    if !queued {
+    let pending = stdout_of("lpstat", &["-l", "-W", "not-completed", "-o", queue])?;
+    let Some(job_status) = parse_job_status(&pending, job_id) else {
         return Ok(JobProgress::Done);
+    };
+    if job_status.contains(NO_DESTINATION) {
+        return Ok(JobProgress::Stalled);
     }
     let status = printer_status(queue)?;
     Ok(if status.printing.as_deref() == Some(job_id) { JobProgress::Printing } else { JobProgress::Queued })
+}
+
+/// Status line of a job in `lpstat -l -o` (empty if it has none), `None` if the job is not listed.
+fn parse_job_status<'a>(pending: &'a str, job_id: &str) -> Option<&'a str> {
+    let mut lines = pending.lines().skip_while(|l| l.split_whitespace().next() != Some(job_id));
+    lines.next()?;
+    let mut details = lines.take_while(|l| l.starts_with(char::is_whitespace));
+    Some(details.find_map(|l| l.trim().strip_prefix("Status:")).unwrap_or("").trim())
 }
 
 #[cfg(test)]
@@ -375,6 +390,23 @@ mod tests {
             "Canon_TS3300_series-42"
         );
         assert!(parse_request_id("oops").is_err());
+    }
+
+    #[test]
+    fn parses_job_status() {
+        let pending = "Q-7  alice  3072  Fri Oct 30\n\
+                       \tStatus: Rendering completed\n\
+                       \tAlerts: job-printing\n\
+                       \tqueued for Q\n\
+                       Q-8  alice  3072  Fri Oct 30\n\
+                       \tStatus: No suitable destination host found by cups-browsed, retrying later\n\
+                       \tAlerts: job-printing\n\
+                       Q-9  alice  3072  Fri Oct 30\n\
+                       \tqueued for Q\n";
+        assert_eq!(parse_job_status(pending, "Q-7"), Some("Rendering completed"));
+        assert!(parse_job_status(pending, "Q-8").unwrap().contains(NO_DESTINATION));
+        assert_eq!(parse_job_status(pending, "Q-9"), Some(""));
+        assert_eq!(parse_job_status(pending, "Q-1"), None);
     }
 
     #[test]

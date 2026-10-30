@@ -56,6 +56,9 @@ msgstr "Reliure"
 msgid "Business card"
 msgstr "Carte de visite"
 
+msgid "CUPS cannot find the printer: run install.sh again"
+msgstr "CUPS ne trouve pas l'imprimante : relancez install.sh"
+
 msgid "CUPS queue that receives the fronts and backs"
 msgstr "File CUPS qui reçoit les rectos et les versos"
 
